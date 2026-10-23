@@ -1,5 +1,7 @@
 # waf_ac_control
 
+[![Rust](https://github.com/k11946678/waf_ac_control/actions/workflows/rust.yml/badge.svg)](https://github.com/k11946678/waf_ac_control/actions/workflows/rust.yml)
+
 ## nginx config
 
 ```
