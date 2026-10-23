@@ -1276,7 +1276,7 @@ mod tests {
 
     #[test]
     fn default_render_has_no_geoip_and_allows_all() {
-        let http = render_http(&State::default(), &test_ctx()).unwrap();
+        let http = render_http(&AppState::default(), &test_ctx()).unwrap();
         assert!(http.contains("map $host $ac_profile"));
         assert!(!http.contains("geoip2"));
         assert!(http.contains("default \"allow-all\";"));
