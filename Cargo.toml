@@ -1,0 +1,10 @@
+[package]
+name = "waf_ac_control"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8.9", features = ["http2", "multipart", "ws"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.154", features = ["preserve_order"] }
+tokio = { version = "1.54.1", features = ["net", "rt", "macros", "time", "parking_lot", "rt-multi-thread"] }
