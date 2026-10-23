@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
     - name: Show toolchain
-      run: rustc --version && cargo --version
+      run: rustc --version && cargo --version && uname -a
     - name: Build
       run: cargo build
     - name: Run tests
